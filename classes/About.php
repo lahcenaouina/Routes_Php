@@ -4,29 +4,8 @@ namespace classes;
 
 class About {
      public function index(){
-      echo "<pre>";
-      var_dump($_GET);
-      echo "</pre>";
-
-      echo "<pre>";
-      var_dump($_POST);
-      echo "</pre>";
-
-        echo "
-        POST
-        <form action=\"/about/create\" method=\"post\">\
-            <label >Data</label>\
-            <input type=\"text\" name=\"Data\" >\
-            <input type=\"submit\"  value=\"SEND DATA\">\
-         </form>";
-         echo "
-         GET
-        <form action=\"/about/create\" method=\"get\">\
-            <label >Data</label>\
-            <input type=\"text\" name=\"Data\" >\
-            <input type=\"submit\"  value=\"SEND DATA\">\
-         </form>";
-         
+      echo "ABOUT";
+         return View::view('FromUpload' ,['title'=>'UPLOAD PAGE' , 'time' => time()])->render(false);
      }
      public function getter() {
       echo"hello";
@@ -39,7 +18,13 @@ class About {
      public function create(){
         return "ABOUT\create PAGE";
      }
-     public function lahcen() {
-      return "LAHCEN ADMIN";
+     public function login() {
+      $_SESSION['login'] = true  ;
+      return 'LOGINED';
+     }
+
+        public function logout() {
+      $_SESSION['login'] = false  ;
+      return 'LOG OUT  : ' .(string) $_SESSION['login'];
      }
 } 

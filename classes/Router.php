@@ -32,7 +32,7 @@ class Router {
                 $route = explode('?' , $request_uri)[0];
                 $action = $this->routes[$methode][$route] ?? null ;
                 if (!$action) {
-                        return "PAGE NOT FOUND ";
+                        return (new View('pagenotfound'))->render();
                 }
                 if (is_callable($action)){
                         return call_user_func($action);
