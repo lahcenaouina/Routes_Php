@@ -11,7 +11,8 @@ $route
         ->Get("/about", [classes\About::class, 'index'])
         ->Get("/about/create", [classes\About::class, 'getter'])
         ->Post("/about/create", [classes\About::class, 'poster'])
-        ->Get("/lahcen", [classes\About::class, 'lahcen'])
+        ->Get("/login", [classes\About::class, 'login'])
+        ->Get("/logout", [classes\About::class, 'logout'])
         ->Post("/upload", [classes\Home::class, 'upload'])
         ->Get("/page", [classes\Page::class, 'index']);
 
