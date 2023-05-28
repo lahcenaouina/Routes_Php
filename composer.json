@@ -5,5 +5,7 @@
             "classes\\": "classes/"
         }
     },
-    "require": {}
+    "require": {
+        "twbs/bootstrap": "4.3.1"
+    }
 }

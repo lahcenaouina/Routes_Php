@@ -1,0 +1,13 @@
+# just check if the module is loaded otherwise any of these config statements are meaningles
+<IfModule mod_rewrite.c>
+    # enable the rewrite engine
+    RewriteEngine On
+    # if request does not lead to the existing file
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # and if request does not lead to the existing folder
+    RewriteCond %{REQUEST_FILENAME} !-d
+    # and if URL path match pattern, forward the request to index.php
+    RewriteRule .* index.php [L]
+    # you may want to exclude some cases
+    # like generated javascript or images pulled from db, do so by the pattern
+</IfModule>
