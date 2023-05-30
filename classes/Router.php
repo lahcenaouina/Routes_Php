@@ -23,10 +23,8 @@ class Router {
 
 
 
-        public function routes_availbles() {
-                echo "<pre>";
-                var_dump($this->routes);
-                echo "</pre>";
+        public function routes_availbles() : array {
+                return $this->routes ;
         }
         public function Run(string $request_uri , string $methode) {
                 $route = explode('?' , $request_uri)[0];

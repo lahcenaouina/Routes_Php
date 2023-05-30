@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Test\\Unit\\RouterTest::Is_connected_to_Data":5},"times":{"Test\\Unit\\RouterTest::it_registers_a_route":0.01,"Test\\Unit\\RouterTest::Is_connected_to_Data":0.025}}

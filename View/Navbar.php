@@ -23,19 +23,7 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
-                <?php
-                    if ($_SESSION["login"] == true) {?>
-                        <li class="nav-item">
-                            <a class="nav-link disabled"> CONNECTED</a>
-                        </li>
-                <?php
-                    } else {
-                        ?>
-                        <li class="nav-item">
-                            <a class="nav-link disabled"> DISCONNECTED</a>
-                        </li>
-                <?php   
-                    }?>
+
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

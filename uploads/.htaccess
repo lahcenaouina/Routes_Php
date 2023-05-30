@@ -1,0 +1,2 @@
+# Deny access to all files in the upload folder
+Deny from all
