@@ -1,0 +1,26 @@
+#icon_log {
+    font-size: 32px;
+}
+
+#navbar {
+    background: white;
+    position: fixed !important;
+    top: -0px;
+    width: 100%;
+    box-shadow: 0px 0px 1px grey;
+    
+    z-index: 100;
+
+
+}
+
+#navbar li {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#loginbtn {
+    background: dodgerblue;
+    margin-left: 10px;
+}
+

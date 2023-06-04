@@ -6,7 +6,7 @@ use Exception;
 
 class App
 {
-        private static DBH $db ; 
+        private static DBH $db ;
 
         public function __construct(protected Router $router , protected array $request , protected array $config)
         {

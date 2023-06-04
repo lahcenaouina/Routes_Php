@@ -2,14 +2,18 @@
     "name": "lahcen/www",
     "autoload": {
         "psr-4": {
-            "classes\\": "classes/"
+            "classes\\": "classes/",
+            "classes\\Controller\\": "classes/Controller/",
+            "classes\\Models\\": "classes/Models/"
         }
     },
+    "authors": [
+        {
+            "name": "aouina4545LL",
+            "email": "lahcenaouina@gmail.com"
+        }
+    ],
     "require": {
-        "twbs/bootstrap": "4.3.1",
         "vlucas/phpdotenv": "^5.5"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^10.1"
     }
 }

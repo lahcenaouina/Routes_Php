@@ -13,9 +13,16 @@ define('VIEW_PATH', __DIR__ . "/View");
 $router = new classes\Router();
 
 $router
-        ->Get("/", [classes\Home::class, 'index'])
-        ->Get("/about", [classes\About::class, 'index'])
-        ->Get("/page", [classes\Page::class, 'index']);
+    ->Get("/", [classes\Home::class , 'index'])
+    ->Get("/post", [classes\Views\PostView::class , 'Addcoment'])
+    ->Get("/comments", [classes\Views\PostView::class , 'GetCommentsbyid'])
+    ->Get("/books", [classes\Controller\booksController::class , 'index'])
+    ->Get("/chatroom", [classes\Controller\ChatController::class , 'index'])
+    ->Get("/login", [classes\Views\UserView::class, 'login'])
+    ->Post("/login", [classes\Views\UserView::class, 'LogUser'])
+    ->Get("/logout", [classes\Views\UserView::class, 'logout'])
+    ->Get("/signup", [classes\Views\UserView::class, 'Signup'])
+    ->Post("/signup", [classes\Views\UserView::class, 'CreateAcounth']);
 
 
 (new App(

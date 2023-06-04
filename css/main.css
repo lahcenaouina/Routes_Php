@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    font-family:Arial, Geneva, Tahoma, sans-serif;
+
+}
+.container-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+}
+.container-main img {
+    height: 200px;
+    padding: 10px;
+}
+.container-main div {
+    margin-top: 9px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+section {
+
+    background: url("/Website_books/Files/Images/zoom-background-home3_2.jpg");
+}
+#container-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 85vmin;
+    margin: 0;
+}
+#holder form {
+    padding: 20px;
+}
+#holder {
+    padding: 15px;
+    border-radius: 9px;
+    box-shadow: 0 0 1px grey;
+    width: 55%;
+    height: auto;
+    background-color: white;
+}
+#Search {
+    background: white;
+    padding: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: baseline;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+#Search button {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dashmain {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-bottom: 0;
+    
+}
+#dashmain .HomeSpace{
+    
+    width: 60%;
+    border-radius: 10px;
+}
+
+#dashmain .rightside {
+    width: 30%;
+    border-radius: 10px;
+    background-color: white;
+    height: 30rem;
+    overflow: hidden;
+
+}
+#dashmain .rightside p {
+    font-family: Roboto;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+
+}
+@media screen and (max-width: 900px) {
+    #dashmain .rightside {
+        display: none;
+    }
+  }
+
+#dashmain .figure {
+    height: 60%;
+    
+}
+  

@@ -1,0 +1,153 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        background-color: #eee;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
+          Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell,
+          Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Lucida Grande, Helvetica, Arial, sans-serif;
+      }
+      
+      .container {
+        background-color: white;
+        width: 40rem;
+        height: auto;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #d3d3d3;
+      }
+      
+      .item {
+        padding: 10px 20px;
+        position: relative;
+      }
+      
+      .item:first-of-type {
+        border-bottom: 1px solid #d3d3d3;
+      }
+      
+      .infoRow {
+        display: flex;
+        align-items: baseline;
+      }
+      
+      .infoRow-likedName {
+        margin: 0 4px;
+      }
+      
+      .infoRow-dotsMenu {
+        display: block;
+        line-height: 0rem;
+        font-size: 2rem;
+        align-self: start;
+        margin-left: auto;
+      }
+      
+      .profileInfo {
+        display: flex;
+      }
+      
+      .profileInfo-image {
+        flex: 0 1 60px;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        background-color: pink;
+      }
+      
+      .profileInfo-text {
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 20px 10px;
+      }
+      
+      .profileInfo-nth:before {
+        content: " • ";
+      }
+      
+      .profileInfo-textSection > p {
+        margin-bottom: 1rem;
+      }
+      
+      .profileInfo-more {
+        display: inline;
+      }
+      
+      .profileInfo-more:before {
+        content: "\00a0";
+        margin-left: 0.2rem;
+      }
+      
+      .translationSection {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .translationSection-translation {
+        margin: 0.5rem 0;
+        color: #006097;
+      }
+      
+      .userActionSection:before {
+        content: "";
+        position: absolute;
+        left: 20px;
+        top: 2px;
+        height: 1px;
+        width: 410px;
+        border-bottom: 1px solid #d3d3d3;
+      }
+      
+      .translationSection-likeIcon:before {
+        content: " 👍 ";
+      }
+      
+      .translationSection-heartIcon:before {
+        content: " ❤️ ";
+      }
+      
+      .translationSection-clapIcon:before {
+        content: " 👏 ";
+      }
+      
+      .translationSection-likeCount:after {
+        content: " • ";
+      }
+      
+      .userActionSection-icons {
+        margin-right: 0.5rem;
+      }
+      
+      .userActionSection-like:before {
+        content: " 👍 ";
+      }
+      
+      .userActionSection-comment:before {
+        content: " 💬 ";
+      }
+      
+      .userActionSection-share:before {
+        content: " ↗️ ";
+      }
+      
+      .font-bold {
+        font-weight: bold;
+      }
+      
+      .font-gray {
+        color: #777;
+      }
+      
+      #commentSection {
+        padding: 0;
+        display: none;
+        line-height: 20%;
+      }
+  

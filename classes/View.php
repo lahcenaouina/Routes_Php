@@ -12,10 +12,7 @@ class View
                 protected array $params = []
         ) {
         }
-
-
-
-
+        
         public static function view(string $view, $params): static
         {
                 return new static($view, $params);
@@ -24,18 +21,15 @@ class View
         {
                 $viewpath = VIEW_PATH . '/' . $this->view . '.php';
 
-                        // store params into variables
-                        foreach ($this->params as $key => $value ) {
-                                $$key = $value ;
-                        }
+                // store params into variables
+                foreach ($this->params as $key => $value ) {
+                        $$key = $value ;
+                }
+
                 if ($WithLayouts) {
                         if (!file_exists($viewpath)) {
                                 throw new \ErrorException("PAGE NOT FOUND");
                         }
-
-
-                
-
                         ob_start();
                         //navbar
                         include(VIEW_PATH.'/Navbar.php');
@@ -52,9 +46,6 @@ class View
                         //content
                         include(__DIR__ . DIRECTORY_SEPARATOR . "..\View\\" . $this->view . ".php");
                         $content = (string) ob_get_clean();
-
-
-                        
                         include(VIEW_PATH.'/template.php');
 
                         
